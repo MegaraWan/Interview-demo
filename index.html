@@ -5,121 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBGENE</title>
+    <script src="https://kit.fontawesome.com/edff901992.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="./js/jquery-3.7.0.js"></script>
 </head>
 
 <body>
-    <div class="banner">
-        <img src="" alt="logo">
+    <div class="wrapper">
+        <div class="content">
+            <div class="banner">
+                <img class="banner-img" src="img/logo.jpg" alt="logo">
+                <span class="scroll-text">SCROLL</span>
+            </div>
+            <header class="nav">
+                <a class=head-logo href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
+                <nav>
+                    <ul class="main-menu">
+                        <li><a href="#SERVICE">SERVICE</a></li>
+                        <li><a href="#SHOWREEL">SHOWREEL</a></li>
+                        <li><a href="#TEAM">TEAM</a></li>
+                        <li><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <label class="navbar-toggle-label" for="navbar-toggle">
+                    <span class="hamburger"></span>
+                </label>
+            </header>
+            <main>
+                <section id="SERVICE">
+                    <h2>
+                        <span class="h2-title">SERVICE</span>
+                        <span class="h2-note">行銷的MARTECH解決方案</span>
+                    </h2>
+                    <div class="service-group">
+                        <div>
+                            <h3>創意的策略</h3>
+                            <p>受不了千篇一律的機器人平台嗎？<br>
+                                從消費者INSIDE出發的創意設計讓你的品牌在第一時間搶奪目光。
+                            </p>
+                        </div>
+                        <img src="" alt="創意的策略">
+                    </div>
+                    <div class="service-group">
+                        <div>
+                            <h3>客製的互動</h3>
+                            <p>怎麼理解買車客戶與買菜客戶的差異？<br>
+                                為每個品牌量身定做的行銷互動讓關係獨樹一格又符合人性需求。
+                            </p>
+                        </div>
+                        <img src="" alt="客制的互動">
+                    </div>
+                    <div class="service-group">
+                        <div>
+                            <h3>整合服務</h3>
+                            <p>不管你是殿商平台或是坐擁百萬會員，<br>
+                                經營任何平台都是溝通的一個環節，我們可以將各個階段完整整合發揮最大效益。
+                            </p>
+                        </div>
+                        <img src="" alt="整合服務">
+                    </div>
+                </section>
+                <section id="SHOWREEL">
+                    <h2>
+                        <span class="h2-title">SHOWREEL</span>
+                        <span class="h2-note">精彩案例</span>
+                    </h2>
+                </section>
+                <section id="TEAM">
+                    <h2>
+                        <span class="h2-title">TEAM</span>
+                        <span class="h2-note">解決方案的完整團隊</span>
+                    </h2>
+                    <div class="container">
+                        <div class="group">
+                            <div class="col-12 col-md-4">
+                                <h3>專業PM</h3>
+                                <div>
+                                    <i class="fa-regular fa-user" style="color: #fafafa;"></i>
+                                </div>
+                                <p>
+                                    <span>需要講人話嗎？</span>
+                                    我們有專業的PM與你討論釐清需求打造符合目標的策略計劃。
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h3>創意前端</h3>
+                                <div>
+                                    <i class="fa-regular fa-user" style="color: #fafafa;"></i>
+                                </div>
+                                <p>
+                                    <span>技術帶來更好的互動感受</span>
+                                    我們的前端與視覺設計有很棒的配合經驗，並且知道如何將使用者最快帶往目的地。
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h3>硬底子的後端</h3>
+                                <div>
+                                    <i class="fa-regular fa-user" style="color: #fafafa;"></i>
+                                </div>
+                                <p>
+                                    <span>真功夫才是硬道理</span>
+                                    累積多年實作經驗的後端團隊成員，讓所有看不到的部分都教人心安。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="CONTACT">
+                    <div class="container">
+                        <div class="group">
+                            <div class="col-12 col-md-6">
+                                <h2>
+                                    <span class="h2-title">CONTACT</span>
+                                    <span class="h2-note">請留下需求，我們盡快與您聯繫<br>
+                                        也可以依照下方資訊直接與我們聯繫</span>
+                                </h2>
+                                <div class="fone"><img src="" alt="">+886-2-2731-1766</div>
+                                <p>大聯線股份有限公司<br>
+                                    台北市106大安區忠孝東路四段325號9樓</p>
+
+                                <img src="img/logo.jpg" alt="logo">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                姓名<input required value="我是客戶" name="Name">
+                                EMAIL<input required name="Email">
+                                電話<input required name="Phone">
+                                需求說明<textarea name="Need" cols="30" rows="10"></textarea>
+                                <button name="Check">確定送出</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
     </div>
-    <header>
-        <i><img src="" alt="logo"></i>
-        <nav>
-            <ul>
-                <li><a href="#SERVICE">SERVICE</a></li>
-                <li><a href="#SHOWREEL">SHOWREEL</a></li>
-                <li><a href="#TEAM">TEAM</a></li>
-                <li><a href="#CONTACT">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="SERVICE">
-        <h2>
-            <span class="h2-title">SERVICE</span>
-            <span class="h2-note">行銷的MARTECH解決方案</span>
-        </h2>
-        <div class="service-group">
-            <div>
-                <h3>創意的策略</h3>
-                <p>受不了千篇一律的機器人平台嗎？<br>
-                    從消費者INSIDE出發的創意設計讓你的品牌在第一時間搶奪目光。
-                </p>
-            </div>
-            <img src="" alt="創意的策略">
-        </div>
-        <div class="service-group">
-            <div>
-                <h3>客製的互動</h3>
-                <p>怎麼理解買車客戶與買菜客戶的差異？<br>
-                    為每個品牌量身定做的行銷互動讓關係獨樹一格又符合人性需求。
-                </p>
-            </div>
-            <img src="" alt="客制的互動">
-        </div>
-        <div class="service-group">
-            <div>
-                <h3>整合服務</h3>
-                <p>不管你是殿商平台或是坐擁百萬會員，<br>
-                    經營任何平台都是溝通的一個環節，我們可以將各個階段完整整合發揮最大效益。
-                </p>
-            </div>
-            <img src="" alt="整合服務">
-        </div>
-    </section>
-    <section id="SHOWREEL">
-        <h2>
-            <span class="h2-title">SHOWREEL</span>
-            <span class="h2-note">精彩案例</span>
-        </h2>
-    </section>
-    <section id="TEAM">
-        <h2>
-            <span class="h2-title">TEAM</span>
-            <span class="h2-note">解決方案的完整團隊</span>
-        </h2>
-        <div>
-            <h3>專業PM</h3>
-            <div>
-                <img src="" alt="專業PM">
-            </div>
-            <p>
-                <span>需要講人話嗎？</span>
-                我們有專業的PM與你討論釐清需求打造符合目標的策略計劃。
-            </p>
-        </div>
-
-        <div>
-            <h3>創意前端</h3>
-            <div>
-                <img src="" alt="專業PM">
-            </div>
-            <p>
-                <span>技術帶來更好的互動感受</span>
-                我們的前端與視覺設計有很棒的配合經驗，並且知道如何將使用者最快帶往目的地。
-            </p>
-        </div>
-
-        <div>
-            <h3>硬底子的後端</h3>
-            <div>
-                <img src="" alt="專業PM">
-            </div>
-            <p>
-                <span>真功夫才是硬道理</span>
-                累積多年實作經驗的後端團隊成員，讓所有看不到的部分都教人心安。
-            </p>
-        </div>
-    </section>
-    <section id="CONTACT">
-        <div>
-            <h2>
-                <span class="h2-title">CONTACT</span>
-                <span class="h2-note">請留下需求，我們盡快與您聯繫<br>
-                    也可以依照下方資訊直接與我們聯繫</span>
-            </h2>
-            <div class="fone"><img src="" alt="">+886-2-2731-1766</div>
-            <p>大聯線股份有限公司<br>
-                台北市106大安區忠孝東路四段325號9樓</p>
-
-            <img src="" alt="logo">
-        </div>
-        <div>
-            姓名<input required value="我是客戶" name="Name">
-            EMAIL<input required name="Email">
-            電話<input required name="Phone">
-            需求說明<textarea name="Need" cols="30" rows="10"></textarea>
-            <button name="Check">確定送出</button>
-        </div>
-    </section>
+    <div class="back-top hide" title="回頂部"></div>
+    <footer>
+        <p>@2020 bigconnect. All Rights Reserved</p>
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

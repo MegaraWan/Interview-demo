@@ -1,0 +1,40 @@
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-img {
+    width: 20%;
+}
+.scroll-text{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-size: 13px;
+    Letter-spacing:0.2rem;
+    position: relative; 
+}
+
+.scroll-text::before{
+    content: ""; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;  
+    transform: translateX(-50%);
+    background-color: #ffffff; 
+    padding: 70% 1px
+}
