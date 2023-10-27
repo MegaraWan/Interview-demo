@@ -28,6 +28,8 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #000;
+
 }
 
 .fixed {
@@ -37,9 +39,7 @@ header {
 }
 
 .head-logo {
-    display: block;
-    width: 20%;
-    margin: 0 auto;
+    visibility: hidden;
 }
 
 header img {
@@ -64,6 +64,7 @@ nav {
     transition: transform 0.3s ease-out;
     transform-origin: top;
     transform: scale(1, 0);
+    background-color: black;
 }
 
 .navbar-toggle {
@@ -76,6 +77,7 @@ nav {
 }
 
 .main-menu {
+    height: 100vh;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +85,7 @@ nav {
     gap: 27px;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 .main-menu li {
@@ -112,6 +115,7 @@ nav {
     display: flex;
     align-items: center;
 }
+
 
 .hamburger,
 .hamburger::before,
@@ -189,8 +193,11 @@ img {
     }
 
     .head-logo {
+        visibility: visible;
         width: 144px;
         margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
         padding-left: 40px;
 
     }
@@ -208,6 +215,9 @@ img {
         margin: auto 0;
     }
 
+    .main-menu {
+        height: 100%;
+    }
 
     .main-menu li {
         opacity: 1;
