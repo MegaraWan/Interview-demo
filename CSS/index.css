@@ -87,7 +87,7 @@ h2 {
     text-align: center;
 }
 
-#SERVICE {
+#SERVICE, #TEAM{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -102,7 +102,7 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 75%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
 }
 
 h3 {
@@ -110,19 +110,20 @@ h3 {
     font-weight: 300;
     position: relative;
     padding-left: 11%;
+    margin-top: 2%;
     margin-bottom: 8%;
 }
 
-.h3-icon {
+.service-h3-icon {
     position: absolute;
     width: 10%;
     top: -10px;
     left: 0
 }
-
+p{
+    line-height:2;
+}
 .service-text {
-
-    line-height: 1.5;
     padding-left: 5%;
     border-left: 3px solid white;
 }
@@ -137,17 +138,54 @@ h3 {
 
 
 .team-card{
-    margin: 0 1%;
-    padding: 2%;
+    margin: 20% 3% 0 ;
+    box-sizing: border-box;
+    padding: 5%;
+    background-color: #232323;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
+.showreel-h3{
+    padding-left: 3%;
+    font-weight: 500;
+}
+.showreel-h3::before{
+    content: "";
+    width: 18%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 1rem;
+    left:-18%;
+}
+
+.team-icon-back-contanier{
+    margin: 2% auto;
+    width: 50%;
+    padding-top: 50%;
+    position: relative;
+}
 .team-icon-back {
-    width: 100px;  
-    height: 100px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
     border-radius: 50%; 
     background-color: #F15A24;
+    display: flex;
 }
+.fa-user{
+    font-size: 45px;
+    margin: auto;
+}
+.team-text{
+    font-weight: 200;
 
+}
 @media screen and (min-width: 768px) {
     body {
         font-size: 18px;
@@ -169,6 +207,7 @@ h3 {
     .service-container {
         flex-direction: row;
         width: 60%;
+        margin-bottom: 10%;
     }
     .service-container:nth-child(odd) {
         flex-direction: row-reverse;
@@ -190,6 +229,38 @@ h3 {
     h3 {
         font-size: 28px;
     }
+    .team-card{
+        margin: 10% 3% 0 ;
+        padding: 2%;
+        min-height: 450px;
+    }
+    .team-icon-back-contanier{
+        width: 60%;
+        padding-top: 60%;
+    }
+    .team-card:first-child {
+        margin-top: 15%;
+    }
+    .team-card:last-child {
+        margin-top: 5%;
+    }
 
+    .showreel-h3{
+        padding-left: 0;
+    }
+    .showreel-h3::before{
+        width: 20%;
+        left:-25%;
+    }
+    .fa-user{
+        font-size: 60px;
+    }
 
+}
+
+@media screen and (min-width: 1920px) {
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 }
