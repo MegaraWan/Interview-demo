@@ -1,6 +1,10 @@
 //nav
+$(document).ready(function(){          
+  $(".nav").addClass("fixed");
+})
+
 $(window).on("scroll", function () {
-  if ($(window).width() < 1024) {
+  if ($(window).width() < 1023) {
     $(".nav").addClass("fixed");
   } else {
     if ($(window).scrollTop() > $(".banner").height()) {
@@ -11,8 +15,6 @@ $(window).on("scroll", function () {
     }
   }
 });
-
-
 
 
 //回到頂部的
