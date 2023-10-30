@@ -42,7 +42,7 @@ header {
 }
 
 header img {
-    width: 50%;
+    width: 25%;
 }
 
 a:hover,
@@ -65,11 +65,13 @@ nav {
     transform: scale(1, 0);
     background-color: black;
 }
+
 .fixed {
     position: fixed;
     top: 0;
     z-index: 99;
 }
+
 .navbar-toggle {
     visibility: hidden;
     position: absolute;
@@ -110,7 +112,7 @@ nav {
 .navbar-toggle-label {
     position: absolute;
     width: 5%;
-    height: 8%;
+    height: 13%;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -208,7 +210,9 @@ img {
     body {
         font-size: 20px;
     }
-
+    header img {
+        width: 50%;
+    }
     .head-logo {
         visibility: visible;
         width: 144px;
