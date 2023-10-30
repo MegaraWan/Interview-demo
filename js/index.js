@@ -1,5 +1,5 @@
 //nav
-$(window).on("scroll", function () {
+$(document).ready(function(){          
   if ($(window).width() < 1023) {
     $(".nav").addClass("fixed");
   } else {
@@ -10,7 +10,30 @@ $(window).on("scroll", function () {
       $(".nav").removeClass("fixed");
     }
   }
+})
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > $(".banner").height()) {
+    $(".nav").addClass("fixed");
+  } else {
+    $(".nav").removeClass("fixed");
+  }
 });
+
+
+
+// $(window).on("scroll", function () {
+//   if ($(window).width() < 1023) {
+//     $(".nav").addClass("fixed");
+//   } else {
+//     if ($(window).scrollTop() > $(".banner").height()) {
+//       console.log("成功");
+//       $(".nav").addClass("fixed");
+//     } else {
+//       $(".nav").removeClass("fixed");
+//     }
+//   }
+// });
 
 
 //回到頂部的
