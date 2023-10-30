@@ -141,24 +141,19 @@ nav {
 .hamburger::after {
     transform: translateY(300%);
 }
+#navbar-toggle:checked ~ .navbar-toggle-label .hamburger {
+    background: transparent;
+}
 
-#navbar-toggle:checked + .nav .hamburger::before{
-    translate: 0px 0px;
-    rotate: 45deg;
-    transition: translate 0.3s 0.3s,
-                rotate 0.3s 0.6s;
+#navbar-toggle:checked ~ .navbar-toggle-label .hamburger::before{
+    transform: translateY(0%) rotate(45deg);
 }
-#navbar-toggle:checked + .nav .hamburger{
-    opacity: 0;
-    transition: opacity 0.3s;
+
+#navbar-toggle:checked ~ .navbar-toggle-label .hamburger::after{  
+    transform: translateY(0%) rotate(315deg);
 }
-#navbar-toggle:checked + .nav .hamburger::after{
-    translate: 0px 0px;
-    /*rotate: -45deg;*/
-    rotate: 315deg;
-    transition: translate 0.3s 0.3s,
-                rotate 0.3s 0.6s;
-}
+
+
 
 .back-top {
     z-index: 99999;
