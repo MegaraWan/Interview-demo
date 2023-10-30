@@ -73,7 +73,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0;
+    margin: 10% 0 ;
 }
 
 .h2-title {
@@ -230,21 +230,20 @@ p{
         font-size: 28px;
     }
     .team-card{
-        margin: 10% 3% 0 ;
+        margin: 0% 3% 0 ;
         padding: 2%;
         min-height: 450px;
+    }
+    .team-card:first-child {
+        margin-top: 5%;
+    }
+    .team-card:last-child {
+        margin-top: -5%;
     }
     .team-icon-back-contanier{
         width: 60%;
         padding-top: 60%;
     }
-    .team-card:first-child {
-        margin-top: 15%;
-    }
-    .team-card:last-child {
-        margin-top: 5%;
-    }
-
     .showreel-h3{
         padding-left: 0;
     }

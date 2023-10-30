@@ -1,16 +1,19 @@
 //nav
-$(window).on("scroll", function () {
-  if ($(window).width() < 1024) {
-    $(".nav").addClass("fixed");
-  } else {
-    if ($(window).scrollTop() > $(".banner").height()) {
-      console.log("成功");
+$(document).ready(function () {
+  $(window).on("scroll", function () {
+    if ($(window).width() < 1024) {
       $(".nav").addClass("fixed");
     } else {
-      $(".nav").removeClass("fixed");
+      if ($(window).scrollTop() > $(".banner").height()) {
+        console.log("成功");
+        $(".nav").addClass("fixed");
+      } else {
+        $(".nav").removeClass("fixed");
+      }
     }
-  }
+  });
 });
+
 
 
 
