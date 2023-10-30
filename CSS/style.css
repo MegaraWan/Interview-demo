@@ -92,11 +92,15 @@ nav {
     margin: 0;
     background-color: black;
 }
-
+.hamburger-head-logo img{
+    margin: 20% 0;
+    width: 30%;
+}
 .main-menu li {
     display: flex;
     justify-content: center;
     opacity: 0;
+    font-size: 24px;
 }
 
 .navbar-toggle:checked~nav .main-menu li {
@@ -151,10 +155,16 @@ nav {
 }
 
 #navbar-toggle:checked ~ .navbar-toggle-label .hamburger::before{
+    top:30px;
+    left: -30px;
+    width: 50px;
     transform: translateY(0%) rotate(45deg);
 }
 
 #navbar-toggle:checked ~ .navbar-toggle-label .hamburger::after{  
+    top:30px;
+    left: -30px;
+    width: 50px;
     transform: translateY(0%) rotate(315deg);
 }
 
@@ -240,6 +250,15 @@ img {
         height: 100%;
     }
 
+    .main-menu li {
+        font-size: 18px;
+    }
+    
+    .hamburger-head-logo img{
+        margin: 0;
+        width: 1%;
+        visibility: hidden;
+    }
     .main-menu li {
         opacity: 1;
     }
