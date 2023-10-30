@@ -1,8 +1,4 @@
 //nav
-$(document).ready(function(){          
-  $(".nav").addClass("fixed");
-})
-
 $(window).on("scroll", function () {
   if ($(window).width() < 1023) {
     $(".nav").addClass("fixed");
