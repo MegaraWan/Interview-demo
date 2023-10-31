@@ -74,7 +74,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0 ;
+    margin-bottom: 8% ;
 }
 
 .h2-title {
@@ -230,7 +230,7 @@ p{
     left:-18%;
 }
 .team-container{
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 .team-icon-back-contanier{
     margin: 2% auto;
