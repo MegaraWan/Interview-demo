@@ -15,16 +15,16 @@ body {
 }
 
 .content {
-    padding-bottom: 130px;
+    padding-bottom: 80px;
 }
 
 footer {
     width: 100%;
-    min-height: 130px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+    background-color: black;
 }
 
 header {

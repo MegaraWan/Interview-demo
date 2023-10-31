@@ -257,8 +257,8 @@ p{
 
 }
 #CONTACT{
-    
     padding-top: 5%;
+    padding-bottom: 0;
 }
 .contact-info{
     color:black;
