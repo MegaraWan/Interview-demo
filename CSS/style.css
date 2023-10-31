@@ -15,12 +15,12 @@ body {
 }
 
 .content {
-    padding-bottom: 80px;
+    padding-bottom: 130px;
 }
 
 footer {
     width: 100%;
-    min-height: 80px;
+    min-height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
