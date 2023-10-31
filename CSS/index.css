@@ -148,8 +148,26 @@ p{
 .service-img{
     width: 60%;
 }
+.swiper {
+    width: 100%;
+    height: 40vh;
+  }
 
-
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .carousel-card{
+    width: 100%;
+  }
+  .carousel-card img{
+    width: 80%;
+  }
 .team-card{
     margin: 20% 3% 0 ;
     box-sizing: border-box;
@@ -161,11 +179,11 @@ p{
     align-content: center;
 }
 
-.showreel-h3{
+.team-h3{
     padding-left: 3%;
     font-weight: 500;
 }
-.showreel-h3::before{
+.team-h3::before{
     content: "";
     width: 18%;
     height: 1px;
@@ -276,6 +294,17 @@ width: 30%;
     border: 0;
     border-radius:20px 
 }
+@media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+}
 @media screen and (min-width: 768px) {
     body {
         font-size: 18px;
@@ -291,6 +320,8 @@ width: 30%;
     .phone{
         font-size: 28px;
     }
+
+
 }
 
 @media screen and (min-width: 1024px) {

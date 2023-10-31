@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Work+Sans&display=swap"
         rel="stylesheet">
+
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="CSS/rwd.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/index.css">
@@ -93,6 +98,22 @@
                         <span class="h2-title">SHOWREEL</span>
                         <span class="h2-note">精彩案例</span>
                     </h2>
+
+             
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><div class="carousel-card"><img src="img/car.png" alt="BMW車子網站"></div></div>
+                          <div class="swiper-slide"><div class="carousel-card"><img src="img/car.png" alt="BMW車子網站"></div></div>
+                          <div class="swiper-slide"><div class="carousel-card"><img src="img/car.png" alt="BMW車子網站"></div></div>
+                          <div class="swiper-slide"><div class="carousel-card"><img src="img/car.png" alt="BMW車子網站"></div></div>
+                          <div class="swiper-slide"><div class="carousel-card"><img src="img/car.png" alt="BMW車子網站"></div></div>
+                          <div class="swiper-slide"><div class="carousel-card"><img src="img/car.png" alt="BMW車子網站"></div></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+        
+
                 </section>
                 <section id="TEAM">
                     <h2>
@@ -102,7 +123,7 @@
                     <div class="container team-container">
                         <div class="group team-group">
                             <div class="col-9 col-md-3 team-card ">
-                                <h3 class="showreel-h3">專業PM</h3>
+                                <h3 class="team-h3">專業PM</h3>
                                 <div class="team-icon-back-contanier">
                                     <div class="team-icon-back">
                                         <i class="fa-regular fa-user" style="color: #fafafa;"></i>
@@ -114,7 +135,7 @@
                                 </p>
                             </div>
                             <div class="col-9 col-md-3 team-card">
-                                <h3 class="showreel-h3">創意前端</h3>
+                                <h3 class="team-h3">創意前端</h3>
                                 <div class="team-icon-back-contanier">
                                     <div class="team-icon-back">
                                         <i class="fa-regular fa-user" style="color: #fafafa;"></i>
@@ -126,7 +147,7 @@
                                 </p>
                             </div>
                             <div class="col-9 col-md-3 team-card">
-                                <h3 class="showreel-h3">硬底子的後端</h3>
+                                <h3 class="team-h3">硬底子的後端</h3>
                                 <div class="team-icon-back-contanier">
                                     <div class="team-icon-back">
                                         <i class="fa-regular fa-user" style="color: #fafafa;"></i>
@@ -149,18 +170,23 @@
                                     <span class="h2-note contact-h2-note">請留下需求，我們盡快與您聯繫<br>
                                         也可以依照下方資訊直接與我們聯繫</span>
                                 </h2>
-                                <div class="phone"><i class="fa-solid fa-phone" style="color: #f15a24;"></i>+886-2-2731-1766</div>
+                                <div class="phone"><i class="fa-solid fa-phone"
+                                        style="color: #f15a24;"></i>+886-2-2731-1766</div>
                                 <p class="contact-address">大聯線股份有限公司<br>
                                     台北市106大安區忠孝東路四段325號9樓</p>
                                 <div class="contact-logo">
-                                    <img  src="img/logo-black.png" alt="logo">
+                                    <img src="img/logo-black.png" alt="logo">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 contact-info contact-info-input">
-                                <span class="contact-info-input-title">姓名</span><input placeholder="我是客戶" name="Name" class="member-info">
-                                <span class="contact-info-input-title">EMAIL</span><input required name="Email" class="member-info">
-                                <span class="contact-info-input-title">電話</span><input required name="Phone" class="member-info">
-                                <span class="contact-info-input-title">需求說明</span><textarea name="Need" cols="30" rows="8" class="member-needs"></textarea>
+                                <span class="contact-info-input-title">姓名</span><input placeholder="我是客戶" name="Name"
+                                    class="member-info">
+                                <span class="contact-info-input-title">EMAIL</span><input required name="Email"
+                                    class="member-info">
+                                <span class="contact-info-input-title">電話</span><input required name="Phone"
+                                    class="member-info">
+                                <span class="contact-info-input-title">需求說明</span><textarea name="Need" cols="30"
+                                    rows="8" class="member-needs"></textarea>
                                 <button name="Check" class="input-check">確定送出</button>
                             </div>
                         </div>
