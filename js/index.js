@@ -1,4 +1,11 @@
 //nav
+$(document).ready(function() {
+  $(".main-menu li a").on('click', function() {
+      $("#navbar-toggle").prop("checked", false);
+  });
+});
+
+
 $(document).ready(function () {
   if ($(window).width() < 1024) {
     $(".nav").addClass("fixed");
