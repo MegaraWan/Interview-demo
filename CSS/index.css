@@ -4,6 +4,7 @@ main {
 }
 
 section {
+    padding: 3% 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -220,6 +221,7 @@ p{
 
 }
 #CONTACT{
+    
     padding-top: 5%;
 }
 .contact-info{
@@ -266,7 +268,7 @@ width: 30%;
 }
 
 .member-info{
-    width: 100%;
+    width: 99%;
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid white;
@@ -279,7 +281,7 @@ width: 30%;
     border-bottom: 2px solid #f15a24;
 }
 .member-needs{
-    width: 100%;
+    width: 99%;
     background-color: transparent;
     border: 1px solid white;
     margin:2% 0 5%;
@@ -399,10 +401,10 @@ width: 30%;
     }
     
     .contact-info-input{
-        padding: 5% 15% 5% 3%;
+        padding: 5% 13% 5% 3%;
     }
     .phone{
-        font-size: 36px;
+        font-size: 28px;
     }
     .input-check{
         margin: 0;
@@ -424,6 +426,6 @@ main {
     max-width: 1920px;
 }
 .contact-group{
-    width: 1920px;
+    width: 1900px;
 }
 }
