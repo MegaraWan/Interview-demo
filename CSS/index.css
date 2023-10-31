@@ -201,25 +201,28 @@ p{
     font-weight: 200;
 
 }
-
+#CONTACT{
+    padding-top: 5%;
+}
 .contact-info{
+    color:black;
     background-color: white;
     box-sizing: border-box;
-    padding: 5% 3% 5% 15%;
-    min-height: 80vh;
+    padding: 8% 3%;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start
+    align-items: center;
 }
 
 .contact-info-input{
-    padding: 5% 15% 5% 3%;
+    color: white;
     background-color:#232323 ;
+    padding:10% 15%;
+    align-items: flex-start
 }
 
-.contact-group{
-    color:black
-}
+
 .contact-h2{
     margin: 0;
 }
@@ -242,6 +245,36 @@ p{
 }
 .contact-logo{
 width: 30%;
+}
+
+.member-info{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin:2% 0 5%;
+}
+.member-info:focus{
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #f15a24;
+}
+.member-needs{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    margin:2% 0 5%;
+}
+.member-needs:focus{
+    outline: none;
+    border: 2px solid #f15a24;
+}
+.input-check{
+    margin: 0 auto;
+    padding:3% 10% ;
+    border: 0;
+    border-radius:20px 
 }
 @media screen and (min-width: 768px) {
     body {
@@ -327,8 +360,24 @@ width: 30%;
     .contact-group{
         width: 1024px;
     }
+
+    .contact-info{
+        padding: 5% 3% 5% 15%;
+        min-height: 85vh;
+        align-items: flex-start
+    }
+    
+    .contact-info-input{
+        padding: 5% 15% 5% 3%;
+    }
     .phone{
         font-size: 36px;
+    }
+    .input-check{
+        margin: 0;
+        padding:2% 10% ;
+        border: 0;
+        border-radius:20px 
     }
 }
 

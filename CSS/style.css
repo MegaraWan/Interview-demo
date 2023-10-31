@@ -50,8 +50,19 @@ a:visited,
 a:link,
 a:active {
     text-decoration: none;
-    color: #433f3f;
 }
+
+.arrive::after {
+    content: '';  
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    width: 33%;  
+    border-bottom: 4px solid #f15a24;
+}
+
+
+
 
 nav {
     position: absolute;
@@ -92,6 +103,22 @@ nav {
     margin: 0;
     background-color: black;
 }
+
+.arrive{
+    color:#433f3f !important;
+    position: relative; 
+}
+
+.arrive::after {
+    content: '';  
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    width: 33%;  
+    border-bottom: 4px solid #f15a24;
+}
+
+
 .hamburger-head-logo img{
     margin: 20% 0;
     width: 30%;
