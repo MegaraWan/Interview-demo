@@ -17,13 +17,13 @@ $(window).on("scroll", function () {
 
 
 jQuery(document).ready(function() {
-  console.log("Document is ready!");
+  console.log("document OK!");
 
   function checkSectionHighlight() {
       $('li a').each(function() {
           var currLink = $(this);
           var refElement = $(currLink.attr('href'));
-          console.log("Checking link to: ", currLink.attr('href'));
+          console.log("連結確認 ", currLink.attr('href'));
 
           if (refElement.length) {
               if (refElement.position().top <= $(window).scrollTop() && refElement.position().top + refElement.height() > $(window).scrollTop()) {
@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
                   currLink.addClass('arrive');  
               }
           } else {
-              console.log("Didn't find element for: ", currLink.attr('href'));
+              console.log("沒有抓到", currLink.attr('href'));
           }
       });
   }
